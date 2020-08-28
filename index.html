@@ -5,7 +5,7 @@
 <head>
 
     <title>Mark's First Web Page</title>
-
+      
     <!-- Custom styles for this template -->
     <link href="page.css" rel="stylesheet">
 
@@ -15,42 +15,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <script language="JavaScript">
+      function showInput() {
+          document.getElementById('display').innerHTML = 
+                      document.getElementById("user_input").value;
+      }
+    </script>
+
+   
 
 </head>
 
 <body>
+<!-- This is the Menu in the Upper Right-->
+    <div class = "bluebox">
+      <a href="/RestaurantRecommendations.html">Restaurant Recommendations</a> &nbsp;
+      <a href="https://www.visitbreck.com/booking/the-village-wetterhorn-3404/" target="_blank">Rent Our Condo in Breckenridge</a> &nbsp;
+      <a href="/AdditionalPictures.html">Additional Pictures</a>
+    </div>
 
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href="#home" class="active">Logo</a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="https://www.cnn.com">News</a>
-    <a href="https://www.aa.com">Contact</a>
-    <a href="https://www.weather.com">About</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-<script>
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-
-    <h1 style="text-align: center;">
+    <h1 style="text-align: center;"style="background-image: url ('/assets/background1920.jpg')">
 
         Visit Breckenridge Colorado!
 
@@ -145,7 +129,7 @@ function myFunction() {
 
 <section style="background-color:orange" >
   
-    <div id="weather">
+    <div id="weather" class = "body">
         <h2 id="location"></h2>
         <h5 id="description"></h5>
         <h5 id="temp"></h5>
@@ -162,36 +146,52 @@ function myFunction() {
 
    <section class="body">
 
+    
+
     <h4>I also like Ice Cream</h4>
         Specifically: Salted Caramel, Pistachio and Butter Pecan.
-    <p id="BOB"></p>
+    <p id="ROB"></p>
+    <p id="COB"></p>
+
+
+
+    <h2>Text input fields</h2>
+<section>
+    <form>
+      <label><b>Enter a Message</b></label>
+      <input type="text" name="message" id="user_input">
+    </form>
+  </section>
+  <section>
+    <p><span id='display1'></span></p>
+    <input type="submit" onclick="showInput();"><br/>
+    <label>Your input: </label>
+    <p><span id='display'></span></p>
+  </section>
+
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+<p id="FirstName"></p>
+    
 
 <p>If you would like to rent a beuatiful condominium close to the Maggie and Main Street
   <a href="https://www.visitbreck.com/booking/the-village-wetterhorn-3404/" target="_blank">then click here</a>
 </p>
-    <script>
-        document.getElementById("BOB").innerHTML = 9 + 6;
-    </script>
+    
    </section>
-
-    <p id="TEST"></p>
-
-
-    <script>
-
-// function weather() {
-//        fetch("http://api.openweathermap.org/data/2.5/weather?zip=80424,us&appid=f1d85396b0ac359611b0e0093b0c32df")
-//            .then(response => response.json())
-//            .then(data => console.log(data))
-            
-//            .catch(function () {
-
-//            });
-     //   }
-     //   window.onload = function()  {weather();
-   // }
-
-
+   
+   <script>
+    document.getElementById("ROB").innerHTML = 9 + 6 * 233;
+    document.getElementById("COB").innerHTML = 9 - 6;
+  </script>
+   
+   <script>
 
 
         function weather() {
@@ -224,7 +224,6 @@ function myFunction() {
         // document.getElementById("TEST").innerHTML = humidity
 
     </script>
-
 
 
 </body>

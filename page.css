@@ -28,17 +28,22 @@ h5 {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-size: 15px;
     font-weight: 300;
-    margin: 50px;
-    padding: 3  px;
+    margin: 10px;
+    padding-top: 3px;
     padding-left: 25px;
-    padding-bottom: 1.5em;
+    padding-bottom: 10px;
     line-height: 110%;
 }
 
 h2 {
-    margin: 0px;
-    padding: 15px;
-    padding-left: 15px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 15px;
+    font-weight: 200;
+    margin: 20px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    line-height: 100%;
 }
 
 .center {
@@ -88,5 +93,17 @@ h2 {
   .active {
     background-color: white;
     color: paleturquoise;
+  }
+
+  .bluebox {
+    font-family: "HelveticaNeue-Bold", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 15px;
+    font-weight: 200;
+    height: 100px;
+    width: 100%;
+    padding-top: 10px;
+    text-align: right;
+    padding-right: 10px;
+    background-image: url('/assets.background1920.jpg');
   }
   

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resaurant Recs</title>
+
+    <script language="JavaScript">
+        function showInput() {
+            document.getElementById('display').innerHTML = 
+                        document.getElementById("user_input").value;
+        }
+      </script>
+    
+</head>
+
+<body>
+    
+    <p>The Crossing</p>
+    <p>Farmhaus</p>
+    <p>Elia & Olio</p>
+    <p>Frontera Grill (Chicago)</p>
+    <p>The Kithen (Boulder)</p>
+    <p>Mr Beef (Chicago)</p>
+
+    <form>
+        <label><b>Enter a Message</b></label>
+        <input type="text" name="message" id="user_input">
+      </form>
+    
+      <input type="submit" onclick="showInput();"><br/>
+      <label>Your input: </label>
+      <p><span id='display'></span></p>
+
+
+</body>
+</html>
