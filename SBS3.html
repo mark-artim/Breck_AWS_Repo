@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Step By Step</title>
+    <!-- Custom styles for this template -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="page.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script language="JavaScript">
+        function showInput() {
+            document.getElementById('display').innerHTML = 
+                        document.getElementById("user_input").value;
+        }
+      </script>
+    
+</head>
+
+<body>
+<section class = "sbs">
+    
+    <h2>Rototiller Check In Process</h2>
+    <br>
+    <h1>Ease of starting the unit. Please start the unit.</h1>
+    <br><br>
+</section>
+
+<section class= "sbs">
+    
+      <form action="/action_page.php">
+        <label for="cars"> How did it go? </label>
+        <br><br>
+        <select name="cars" id="cars" onchange="enableStartBtn()">
+            <option value="">Select a Value</option>
+            <option value="fuel1">On the first pull.</option>
+            <option value="fuel2">On the second pull.</option>
+            <option value="fuel3">On the third pull.</option>
+            <option value="fuel4">This piece of shit won't start.</option>
+        </select>
+        <br><br>
+      </form>
+
+      <button type="button" id="prevbutton" class="btn btn-primary btn-lg btn-min-width">Previous</button>
+      <button type="button" id="nextbutton" class="btn btn-primary btn-lg btn-min-width disabled">Next</button>
+
+    </section>
+    <br>
+
+<script type="text/javascript">
+
+function enableStartBtn() {
+    //$('#nextbutton').removeClass('disabled');
+    nextbutton.classList.remove('disabled');
+}
+
+</script>
+
+
+
+
+</body>
+</html>

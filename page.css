@@ -17,12 +17,18 @@ body {
    padding-bottom: 1.5em;
 }
 h1 {
-    background-color:orange;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
     margin: 20px;
     padding: 40px;
 }
+
+.bgorange {
+  background-color:orange;
+  margin: 20px;
+  padding: 40px;
+}
+
 
 h5 {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -45,6 +51,7 @@ h2 {
     padding-bottom: 5px;
     line-height: 100%;
 }
+
 
 .center {
     display: block;
@@ -106,4 +113,31 @@ h2 {
     padding-right: 10px;
     background-image: url('/assets.background1920.jpg');
   }
+  
+  .sbs {
+    font-family: "HelveticaNeue-Bold", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 30px;
+    font-weight: 200;
+    color: #2699fb;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-image: url('/assets.background1920.jpg');
+  }
+
+  p.center {
+    text-align: center;
+  }
+
+  .btn-min-width {
+    min-width: 150px;
+    padding:5px;
+}
+
+select{
+  margin:40px;
+  background: lightgoldenrodyellow;
+}
   
