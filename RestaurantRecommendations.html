@@ -22,14 +22,61 @@
     <p>The Kithen (Boulder)</p>
     <p>Mr Beef (Chicago)</p>
 
-    <form>
+    
+
+      <p id="ROB"></p>
+      <p id="COB"></p>
+
+      <script>
+        document.getElementById("ROB").innerHTML = 9 + 6 * 233;
+        document.getElementById("COB").innerHTML = 9 - 6;
+      </script>
+
+
+<form>
+    <label><b>Enter a Message</b></label>
+    <input type="text" name="message" id="user_input">
+  </form>
+
+  <input type="submit" onclick="showInput();"><br/>
+  <label>Your message was: </label>
+  <p><span id='display'></span></p>
+
+
+
+
+
+
+
+
+<h2>Text input fields</h2>
+    <section>
+      <form>
         <label><b>Enter a Message</b></label>
         <input type="text" name="message" id="user_input">
       </form>
-    
-      <input type="submit" onclick="showInput();"><br/>
+    </section>
+    <section>
+      <p><span id='display1'></span></p>
+      <input type="submit" onclick="showInput();"><br />
       <label>Your input: </label>
       <p><span id='display'></span></p>
+    </section>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+      </form>
+  
+      <p id="FirstName"></p>
+
+
+
+
+
+
 
 
 </body>
