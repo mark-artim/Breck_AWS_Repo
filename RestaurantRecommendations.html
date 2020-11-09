@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Resaurant Recs</title>
+    
+    <!-- Custom styles for this template -->
+    <link href="page.css" rel="stylesheet">
 
     <script language="JavaScript">
         function showInput() {
@@ -19,7 +22,7 @@
     <p>Farmhaus</p>
     <p>Elia & Olio</p>
     <p>Frontera Grill (Chicago)</p>
-    <p>The Kithen (Boulder)</p>
+    <p>The Kitchen (Boulder)</p>
     <p>Mr Beef (Chicago)</p>
 
     
@@ -42,37 +45,51 @@
   <label>Your message was: </label>
   <p><span id='display'></span></p>
 
+<br><br><br><br>
 
+<script>
+var URL = "https://e8o9n5ugog.execute-api.us-east-2.amazonaws.com/prod/visitors";
+</script>
 
+<form id="formElem">
+  <div>
+    <label for="say">What is your email address?</label>
+    <input name="say" id="say" value="someone@gmail.com">
+  </div>
+  <div>
+    <label for="to">What is the creation date?</label>
+    <input name="to" id="to" value="2020-10-31">
+  </div>
+  <div>
+    <button>Submit</button>
+  </div>
+</form>
 
+<script>
+  formElem.onsubmit = async (e) => {
+    e.preventDefault();
 
+    let response = await fetch(URL, {
+      method: 'POST',
+      body: new FormData(formElem)
+    });
 
+    let result = await response.json();
 
+    alert(result.message);
+  };
+</script>
 
-<h2>Text input fields</h2>
-    <section>
-      <form>
-        <label><b>Enter a Message</b></label>
-        <input type="text" name="message" id="user_input">
-      </form>
-    </section>
-    <section>
-      <p><span id='display1'></span></p>
-      <input type="submit" onclick="showInput();"><br />
-      <label>Your input: </label>
-      <p><span id='display'></span></p>
-    </section>
+<!-- var formData = JSON.stringify($("#myForm").serializeArray());
 
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe">
-      </form>
-  
-      <p id="FirstName"></p>
-
-
+$.ajax({
+  type: "POST",
+  url: "serverUrl",
+  data: formData,
+  success: function(){},
+  dataType: "json",
+  contentType : "application/json"
+}); -->
 
 
 
