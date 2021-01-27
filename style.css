@@ -12,7 +12,16 @@ body {
     }
 a {
     color: #78FFF1;
+    }
+a:link {
     text-decoration: none;
+    color: #78FFF1;
+    }
+
+
+
+a:visited {
+    color:darkturquoise;
     }
 a:hover {
     color: orangered;
@@ -71,18 +80,18 @@ a:hover {
 
 .flex-container {
         display:flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 5%;
         margin-left: 10%;
         margin-right: 10%;
-        min-height: 30em;
+        min-height: 20em;
     }
           
 .card {
     display: flex;
     background-color: rgba(211, 211, 211, 0.5);
-    /* width: 300px; */
-    /* height: 500px; */
+    min-height: 30em;
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
