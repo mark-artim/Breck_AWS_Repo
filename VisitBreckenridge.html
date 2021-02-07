@@ -7,14 +7,17 @@
   <title>Mark's First Web Page</title>
 
   <!-- Custom styles for this template -->
-  <link href="page.css" rel="stylesheet">
-
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="Breck.css" rel="stylesheet">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  
   <script language="JavaScript">
     function showInput() {
       document.getElementById('display').innerHTML =
@@ -22,18 +25,16 @@
     }
   </script>
 
-/Users/markartim/Documents/GitHub/Breck_AWS_Repo/assets/P1.jpeg
 
 </head>
 
 <body>
+  
+  <header>
+    <h1 class="header">Visit Breckenridge Colorado!</h1>
+  </header>
 
-  <h1 style="text-align: center;" class="bgorange">
-
-    Visit Breckenridge Colorado!
-
-  </h1>
-
+  
   <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -94,7 +95,7 @@
           <img class="center-block" src="/assets/P6.jpeg" alt="Breckenridge" style="width: auto; height: 400px;">
           <div class="carousel-caption">
             <h3>The Blue River</h3>
-            <p>The Blue River runs through the heart of Breck</p>
+            <p>runs through the heart of Breck!</p>
           </div>
         </div>
 
@@ -120,17 +121,17 @@
     </div>
   </div>
 
-
-  <section style="background-color:orange">
-
-    <div id="weather" class="body center">
-      <h2 id="location" class="body center"></h2>
-      <h5 id="description" class="body center"></h5>
-      <h5 id="temp" class="body center"></h5>
-      <h5 id="tempmax" class="body center"></h5>
+<!-- The Weather Section  -->
+  <section class="weather">
+    <div id="weather">
+      <h2 id="location"></h2>
+      <p id="description"></p>
+      <p id="temp"></p>
+      <p id="tempmax"></p>
     </div>
   </section>
 
+  <!-- The Main Street Live Cam Section  -->
   <Section>
     <h2 style="text-align: center;">
       Downtown Breckenridge Main Street Live Cam
@@ -139,17 +140,17 @@
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </Section>
 
-  <section class="body">
-
-
-    <br><br>
-    <p>Click here if you would like to rent a beautiful condominium close to the Maggie and Main Street
-      <a href="https://www.visitbreck.com/booking/the-village-wetterhorn-3404/" target="_blank">then click here</a>
+  <section class="rent-condo">
+    <h2 class="center">Rent our Condo!</h2>
+    <div id="ball"></div>
+    <p>Would you would like to rent a beautiful condominium steps away from the Maggie and teh Quick Silver Lift and only a two minute walk to Main Street?
+      <a href="https://www.visitbreck.com/booking/the-village-wetterhorn-3404/" target="_blank">Then click here!</a>
     </p>
-
   </section>
 
   <script>
+
+
 
     function weather() {
       fetch("https://api.openweathermap.org/data/2.5/weather?zip=80424,us&appid=f1d85396b0ac359611b0e0093b0c32df")

@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    
+    /* undohtml.css */
+    /* (CC) 2004 Tantek Celik. Some Rights Reserved.                  */
+    /* http://creativecommons.org/licenses/by/2.0                     */
+    /* This style sheet is licensed under a Creative Commons License. */
+
+    :link, :visited {
+        text-decoration: none;
+        }
+    ul, ol {
+        list-style: none;
+        }
+    h1, h2, h3, h4, h5, h6, pre, code, p {
+        font-size: 1em;
+        }
+    ul, ol, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, pre, 
+    form, body, html, p, blockquote, fieldset, input {
+        padding: 0;
+        margin: 0;
+        }
+    a img, :link img, :visited img {
+        border: none;
+        }
+    address {
+        font-style: normal;
+        }  
+}
+
+  body {
+    font-family: 'Cabin', sans-serif;
+  }
+
+    .header {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10%;
+        height: 200px;
+        align-items: center;
+    }
+
+    .header::before {    
+        content: "";
+        background-image: url("/assets/BreckHeader.jpeg");
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.45;
+    }
+    header h1 {
+        font-weight: bolder;
+        font-size: 28px;
+        animation-name: colorwheel;
+        animation-duration: 16s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes colorwheel {
+        0%   {color:black;}
+        25%  {color: red;}
+        50%  {color: blue;}
+        100% {color: green;}
+      }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .weather {
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 10% 0% 10% 0%;
+        min-height: 200px;
+        align-items: center;
+    }
+
+    .center {
+        justify-content: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rent-condo {
+        margin: 5%;
+        font-size: 18px;
+    }
+
+    section iframe {
+        display: block;
+        margin-top: 4%;
+    }
+    
+
+    @media only screen and (min-width: 768px) {
+        h1 {
+            font-size: 3.0em;
+        }
+        h2 {
+            font-size: 2.0rem;
+        }
+        p {
+            font-size: 1.5em;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        h1 {
+            font-size: 4.0em;
+        }
+        h2 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 2.5em;
+        }
+    }
