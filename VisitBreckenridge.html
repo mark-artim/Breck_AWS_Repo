@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link href="Breck.css" rel="stylesheet">
+  <link href="./assets/css/Breck.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -52,15 +52,15 @@
       <div class="carousel-inner">
 
         <div class="item active">
-          <img class="center-block" src="/assets/P1.jpeg" alt="Los Angeles" style="width: auto; height: 400px;">
+          <img class="center-block" src="/assets/images/P1.jpeg" alt="Los Angeles" style="width: auto; height: var(--car-img-height);">
           <div class="carousel-caption">
             <h3>Extensive Bike Trails</h3>
             <p>Beck is always so much fun!</p>
           </div>
         </div>
 
-        <div class="item">
-          <img class="center-block" src="/assets/P2.jpeg" alt="The Path to Frisco" style="width: auto; height: 400px;">
+        <div class="item zzz">
+          <img class="center-block" src="/assets/images/P2.jpeg" alt="The Path to Frisco" style="width: auto; height: var(--car-img-height);">
           <div class="carousel-caption">
             <h3>Lake Dillon</h3>
             <p>Enjoy Frisco & Lake Dillon</p>
@@ -68,7 +68,7 @@
         </div>
 
         <div class="item">
-          <img class="center-block" src="/assets/P3.jpeg" alt="Lake Dillon" style="width: auto; height: 400px;">
+          <img class="center-block" src="/assets/images/P3.jpeg" alt="Lake Dillon" style="width: auto; height: 400px;">
           <div class="carousel-caption">
             <h3>Breckenridge</h3>
             <p>We love the Breck!</p>
@@ -76,7 +76,7 @@
         </div>
 
         <div class="item">
-          <img class="center-block" src="/assets/P4.jpeg" alt="Breckenridge" style="width: auto; height: 400px;">
+          <img class="center-block" src="/assets/images/P4.jpeg" alt="Breckenridge" style="width: auto; height: 400px;">
           <div class="carousel-caption">
             <h3>Incredible Trail Rides</h3>
             <p>Rent this Cannondale Power Assist</p>
@@ -84,7 +84,7 @@
         </div>
 
         <div class="item">
-          <img class="center-block" src="/assets/P5.jpeg" alt="Breckenridge" style="width: auto; height: 400px;">
+          <img class="center-block" src="/assets/images/P5.jpeg" alt="Breckenridge" style="width: auto; height: 400px;">
           <div class="carousel-caption">
             <h3>Beautiful Hiking</h3>
             <p>Ski runs turn to flowery meadows</p>
@@ -92,7 +92,7 @@
         </div>
 
         <div class="item">
-          <img class="center-block" src="/assets/P6.jpeg" alt="Breckenridge" style="width: auto; height: 400px;">
+          <img class="center-block" src="/assets/images/P6.jpeg" alt="Breckenridge" style="width: auto; height: 400px;">
           <div class="carousel-caption">
             <h3>The Blue River</h3>
             <p>runs through the heart of Breck!</p>
@@ -100,7 +100,7 @@
         </div>
 
         <div class="item">
-          <img class="center-block" src="/assets/P7.jpeg" alt="Breckenridge" style="width: auto; height: 400px;">
+          <img class="center-block" src="/assets/images/P7.jpeg" alt="Breckenridge" style="width: auto; height: 400px;">
           <div class="carousel-caption">
             <h3>Fly Fishing Anyone?</h3>
             <p>I think I see a trout!</p>
@@ -136,16 +136,21 @@
     <h2 style="text-align: center;">
       Downtown Breckenridge Main Street Live Cam
     </h2>
-    <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/SH63YaIWyK0" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="iframe-container">
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/SH63YaIWyK0" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </Section>
+
 
   <section class="rent-condo">
     <h2 class="center">Rent our Condo!</h2>
     <div id="ball"></div>
-    <p>Would you would like to rent a beautiful condominium steps away from the Maggie and teh Quick Silver Lift and only a two minute walk to Main Street?
-      <a href="https://www.visitbreck.com/booking/the-village-wetterhorn-3404/" target="_blank">Then click here!</a>
+    <p>Would you would like to rent a beautiful condominium steps away from the Maggie and the Quick Silver Lift? Only a two minute walk to Main Street!
+      <a href="https://www.visitbreck.com/booking/the-village-wetterhorn-3404/" target="_blank">Click here!</a>
     </p>
+    <img class="center-block" src="/assets/images/Unit_Pictures/L4.jpg" alt="Breckenridge">
+    <img class="center-block" src="/assets/images/Unit_Pictures/L22.jpg" alt="Breckenridge">
   </section>
 
   <script>
