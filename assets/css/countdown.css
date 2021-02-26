@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://image.noelshack.com/fichiers/2020/49/2/1606779590-new-years-eve-1283521-1280.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: 75%;
+  text-align: center;
+}
+
+.txt, .time {
+  color: #FFF;
+}
+
+.txt {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+
+.time > div:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+/* Responsive vite fait */
+@media screen and (max-width: 400px) {
+  .txt {
+    font-size: 2rem;
+  }
+
+  .time {
+    font-size: 1rem;
+  }
+}
+
+
+
+Resources
