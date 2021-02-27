@@ -32,6 +32,7 @@ let getRemainingTime = setInterval(() => {
     clearInterval(getRemainingTime);
     txtBox.innerText = 'Happy Birthday Chrissy !';
     timeBox.style.display = 'none';
+    window.open("https://www.markartim.com/CTAfter7.html")
   }
   
 }, 100);
