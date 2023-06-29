@@ -19,6 +19,7 @@
     //   birthday = dayMonth + nextYear;
     // }
     eventday = "10/02/2023"
+    console.log("eventday: ",eventday);
     //end
     
     const countDown = new Date(eventday).getTime(),
