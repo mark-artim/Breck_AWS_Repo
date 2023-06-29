@@ -18,7 +18,7 @@
     if (today > birthday) {
       birthday = dayMonth + nextYear;
     }
-    birthday = "10/02/2022"
+    birthday = "10/02/2023"
     //end
     
     const countDown = new Date(birthday).getTime(),
