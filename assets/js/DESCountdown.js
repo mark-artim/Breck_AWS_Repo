@@ -18,7 +18,7 @@
     if (today > birthday) {
       birthday = dayMonth + nextYear;
     }
-    birthday = "01/31/2022"
+    birthday = "10/02/2022"
     //end
     
     const countDown = new Date(birthday).getTime(),
@@ -34,7 +34,7 @@
   
           //do something later when date is reached
           if (distance < 0) {
-            document.getElementById("headline").innerText = "It's my birthday!";
+            document.getElementById("headline").innerText = "It's Go-Live Day!";
             document.getElementById("countdown").style.display = "none";
             document.getElementById("content").style.display = "block";
             clearInterval(x);
