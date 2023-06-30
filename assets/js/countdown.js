@@ -1,38 +1,27 @@
-// DOM
-const txtBox = document.querySelector('.txt');
-const timeBox = document.querySelector('.time');
-const daysBox = document.getElementById('days');
-const hoursBox = document.getElementById('hours');
-const minutesBox = document.getElementById('minutes');
-const secondsBox = document.getElementById('seconds');
+var countDownDate = new Date("Oct 2, 2023 08:00:00").getTime();
 
-// Fonction qui affiche le temps restant jusqu'à endDate qu'on lance à intervalle régulier
-let getRemainingTime = setInterval(() => {
-  // Date de fin
-  let endDate = new Date('27 February 2021 19:00:00');
-  // Date actuelle
-  let now = new Date();
-  // Différence date de fin - date actuelle
-  let timeRemaining = endDate - now;
+// Update the count down every 1 second
+var x = setInterval(function() {
 
-  // Calculs du temps pour les jours, heures, minutes, secondes
-  let days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+  // Get today's date and time
+  var now = new Date().getTime();
 
-  // Affichage
-  daysBox.innerText = `Days: ${days}`;
-  hoursBox.innerText = `Hours: ${hours}`;
-  minutesBox.innerText = `Minutes: ${minutes}`;
-  secondsBox.innerText = `Seconds: ${seconds}`;
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
 
-  // Si le compte à rebours est inférieur ou égal à 0...
-  if (timeRemaining <= 0) {
-    clearInterval(getRemainingTime);
-    txtBox.innerText = 'Happy Birthday Chrissy !';
-    timeBox.style.display = 'none';
-    window.open("https://www.markartim.com/CTAfter7.html")
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
   }
-  
-}, 100);
+}, 1000);
