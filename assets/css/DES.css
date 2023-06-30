@@ -49,6 +49,14 @@
     font-weight: normal;
     letter-spacing: 1.5rem;
   }
+
+  .countdown {
+    display: inline-block;
+    font-size: 3.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
   
   li {
     display: inline-block;
