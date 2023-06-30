@@ -51,6 +51,8 @@
   }
 
   #countdown {
+    font-color: orange;
+    color: pink;
     display: inline-block;
     font-size: 3.5em;
     list-style-type: none;
